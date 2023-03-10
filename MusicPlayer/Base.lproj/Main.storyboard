@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Genre Button Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GenreButtonScreen" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWl-jv-iYn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundpic2" translatesAutoresizingMaskIntoConstraints="NO" id="dX3-hH-GWC">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Player" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vuf-WL-p3x">
+                                        <rect key="frame" x="80" y="118" width="254.5" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyQ-5f-H33">
+                                        <rect key="frame" x="0.0" y="550" width="414" height="346"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="703-6o-cgX">
+                                                <rect key="frame" x="19.5" y="123" width="375" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZC-dD-hDL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="100"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Stop">
+                                                            <backgroundConfiguration key="background" strokeWidth="3">
+                                                                <color key="backgroundColor" red="0.57392342380000005" green="0.16202459960000001" blue="0.56696225730000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="strokeColor" red="0.57392342380000005" green="0.16202459960000001" blue="0.56696225730000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="18"/>
+                                                            <color key="baseForegroundColor" red="0.04797264934" green="0.1095143482" blue="0.1215710267" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NY-bi-hG5">
+                                                        <rect key="frame" x="136.5" y="0.0" width="102" height="100"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Play">
+                                                            <backgroundConfiguration key="background" strokeWidth="3">
+                                                                <color key="backgroundColor" red="0.57392342380000005" green="0.16202459960000001" blue="0.56696225730000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="strokeColor" red="0.57392342380000005" green="0.16202459960000001" blue="0.56696225730000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="18"/>
+                                                            <color key="baseForegroundColor" red="0.04797264934" green="0.1095143482" blue="0.1215710267" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiu-hX-Hc3">
+                                                        <rect key="frame" x="273.5" y="0.0" width="101.5" height="100"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Next">
+                                                            <backgroundConfiguration key="background" strokeWidth="3">
+                                                                <color key="backgroundColor" red="0.57392342380000005" green="0.16202459960000001" blue="0.56696225730000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="strokeColor" red="0.57392342380000005" green="0.16202459960000001" blue="0.56696225730000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="18"/>
+                                                            <color key="baseForegroundColor" red="0.04797264934" green="0.1095143482" blue="0.1215710267" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="375" id="JAZ-3n-uFe"/>
+                                                    <constraint firstAttribute="height" constant="100" id="bLq-Ts-kOP"/>
+                                                </constraints>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3C-0l-oM5">
+                                                <rect key="frame" x="182" y="10" width="50" height="5"/>
+                                                <color key="backgroundColor" red="0.048485957089999997" green="0.1409695446" blue="0.1490218639" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="d9a-f2-pAj"/>
+                                                    <constraint firstAttribute="width" constant="50" id="ysH-dD-KA6"/>
+                                                </constraints>
+                                            </view>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rwn-7c-gqu">
+                                                <rect key="frame" x="17" y="269" width="380" height="30"/>
+                                                <color key="tintColor" red="0.57392342380000005" green="0.16202459960000001" blue="0.56696225730000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="thumbTintColor" red="0.57392342380000005" green="0.16202459960000001" blue="0.56696225730000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufT-l3-H1y">
+                                                <rect key="frame" x="120" y="42" width="174" height="21"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.37051659988794255" green="0.89606746953123939" blue="0.90054647872664517" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.048485957089999997" green="0.1409695446" blue="0.1490218639" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="ufT-l3-H1y" firstAttribute="leading" secondItem="jyQ-5f-H33" secondAttribute="leading" constant="120" id="1Mi-on-ykF"/>
+                                            <constraint firstItem="ufT-l3-H1y" firstAttribute="top" secondItem="jyQ-5f-H33" secondAttribute="top" constant="42" id="8st-8i-hLp"/>
+                                            <constraint firstItem="703-6o-cgX" firstAttribute="centerY" secondItem="jyQ-5f-H33" secondAttribute="centerY" id="A4o-0h-mxw"/>
+                                            <constraint firstAttribute="bottom" secondItem="ufT-l3-H1y" secondAttribute="bottom" constant="283" id="Dot-95-bng"/>
+                                            <constraint firstItem="703-6o-cgX" firstAttribute="centerX" secondItem="jyQ-5f-H33" secondAttribute="centerX" id="LTp-u5-mq2"/>
+                                            <constraint firstAttribute="bottom" secondItem="rwn-7c-gqu" secondAttribute="bottom" constant="48" id="OKi-ac-x6j"/>
+                                            <constraint firstItem="k3C-0l-oM5" firstAttribute="centerX" secondItem="jyQ-5f-H33" secondAttribute="centerX" id="S8i-Kt-Ykw"/>
+                                            <constraint firstItem="rwn-7c-gqu" firstAttribute="top" secondItem="jyQ-5f-H33" secondAttribute="top" constant="269" id="XzB-Hx-3jD"/>
+                                            <constraint firstItem="rwn-7c-gqu" firstAttribute="leading" secondItem="jyQ-5f-H33" secondAttribute="leading" constant="19" id="YAE-8T-SIX"/>
+                                            <constraint firstAttribute="trailing" secondItem="rwn-7c-gqu" secondAttribute="trailing" constant="19" id="myE-cq-TN5"/>
+                                            <constraint firstItem="k3C-0l-oM5" firstAttribute="top" secondItem="jyQ-5f-H33" secondAttribute="top" constant="10" id="xFL-mp-U1u"/>
+                                            <constraint firstAttribute="trailing" secondItem="ufT-l3-H1y" secondAttribute="trailing" constant="120" id="xkG-ux-KLN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="dX3-hH-GWC" firstAttribute="leading" secondItem="EWl-jv-iYn" secondAttribute="leading" id="2Bf-Dj-9PI"/>
+                                    <constraint firstItem="Vuf-WL-p3x" firstAttribute="top" secondItem="EWl-jv-iYn" secondAttribute="top" constant="118" id="2Nf-1p-k7h"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vuf-WL-p3x" secondAttribute="bottom" constant="730" id="7hh-Tc-Ocm"/>
+                                    <constraint firstAttribute="trailing" secondItem="jyQ-5f-H33" secondAttribute="trailing" id="BMB-p5-fxl"/>
+                                    <constraint firstAttribute="bottom" secondItem="dX3-hH-GWC" secondAttribute="bottom" id="DKX-u5-t0L"/>
+                                    <constraint firstItem="Vuf-WL-p3x" firstAttribute="centerX" secondItem="EWl-jv-iYn" secondAttribute="centerX" id="EGT-xg-2Ts"/>
+                                    <constraint firstItem="jyQ-5f-H33" firstAttribute="leading" secondItem="EWl-jv-iYn" secondAttribute="leading" id="JGh-9C-Bxq"/>
+                                    <constraint firstItem="dX3-hH-GWC" firstAttribute="top" secondItem="EWl-jv-iYn" secondAttribute="top" id="K4k-CJ-NqO"/>
+                                    <constraint firstAttribute="bottom" secondItem="jyQ-5f-H33" secondAttribute="bottom" id="fl0-yZ-ym9"/>
+                                    <constraint firstAttribute="trailing" secondItem="dX3-hH-GWC" secondAttribute="trailing" id="jQi-BN-hMI"/>
+                                    <constraint firstItem="jyQ-5f-H33" firstAttribute="top" secondItem="EWl-jv-iYn" secondAttribute="top" constant="550" id="tTf-3u-OJ5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EWl-jv-iYn" secondAttribute="trailing" id="SF9-Qm-JYP"/>
+                            <constraint firstItem="EWl-jv-iYn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XfK-wx-fHW"/>
+                            <constraint firstItem="EWl-jv-iYn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tb2-Vo-YNS"/>
+                            <constraint firstAttribute="bottom" secondItem="EWl-jv-iYn" secondAttribute="bottom" id="wb3-RH-r5c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="EWl-jv-iYn" id="bhq-Pb-V2i"/>
+                        <outlet property="halfButtonview" destination="jyQ-5f-H33" id="ae7-RA-OJt"/>
+                        <outlet property="imageView" destination="dX3-hH-GWC" id="qRL-tA-6xh"/>
+                        <outlet property="knobView" destination="k3C-0l-oM5" id="e2n-8I-PUY"/>
+                        <outlet property="musicNameLabel" destination="ufT-l3-H1y" id="vmR-t7-7tb"/>
+                        <outlet property="nextButton" destination="qiu-hX-Hc3" id="kpq-PG-rvX"/>
+                        <outlet property="playButton" destination="1NY-bi-hG5" id="6SE-4W-r14"/>
+                        <outlet property="slider" destination="rwn-7c-gqu" id="18W-Ze-TVz"/>
+                        <outlet property="stopButton" destination="aZC-dD-hDL" id="q0C-Qd-aGw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340.57971014492756" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundpic2" width="3456" height="5184"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
